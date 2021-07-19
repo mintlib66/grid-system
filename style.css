@@ -1,0 +1,30 @@
+header {
+  margin-bottom: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25%, auto));
+  grid-auto-rows: minmax(100px, auto);
+  column-gap: 10px;
+  row-gap: 20px;
+}
+.item {
+  background-color: rgb(166, 223, 223);
+  color: teal;
+  text-align: center;
+}
+.item-text {
+  position: relative;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.item:nth-child(1) {
+  /*
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+  */
+  grid-column: 1 / 4;
+}
