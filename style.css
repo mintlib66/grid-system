@@ -1,13 +1,32 @@
 header {
-  margin-bottom: 10px;
+  padding: 8px;
+  text-align: center;
+}
+.title {
+  margin-bottom: 8px;
+  font-size: 2em;
+}
+.subtitle {
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
+.option {
+  padding: 5px;
+}
+.input-small {
+  width: 50px;
 }
 
+.preview {
+  margin: 5px;
+  border: 1px dotted teal;
+}
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(25%, auto));
   grid-auto-rows: minmax(100px, auto);
-  column-gap: 10px;
   row-gap: 20px;
+  column-gap: 10px;
 }
 .item {
   background-color: rgb(166, 223, 223);
@@ -19,12 +38,4 @@ header {
   display: block;
   top: 50%;
   transform: translateY(-50%);
-}
-.item:nth-child(1) {
-  /*
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 2;
-  */
-  grid-column: 1 / 4;
 }
