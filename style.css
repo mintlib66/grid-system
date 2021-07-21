@@ -29,10 +29,10 @@ header {
 
 .preview {
   margin: 5px;
-  border: 1px dotted teal;
 }
 .container {
   display: grid;
+  border: 1px dotted teal;
   grid-template-columns: repeat(auto-fill, minmax(25%, auto));
   grid-auto-rows: minmax(100px, auto);
   row-gap: 20px;

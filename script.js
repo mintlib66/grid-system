@@ -1,6 +1,8 @@
 const container = document.querySelector(".container");
 const items = document.querySelectorAll(".item");
 
+const container_width = document.querySelector("#container-width");
+const container_height = document.querySelector("#container-height");
 const quantity = document.querySelector("#quantity");
 const row_gap = document.querySelector("#row-gap");
 const column_gap = document.querySelector("#column-gap");
@@ -13,6 +15,10 @@ const grid_template_columns = document.querySelector("#grid-template-columns");
 let item_quantity = 9;
 
 //함수
+function updateContainerCSize(){
+    container.style.width = `${container_width.value}`;
+    container.style.height = `${container_height.value}`;
+}
 function updateItemQuantity(){
     let item_code = "";
     for(let i=0; i<quantity.value; i++){
@@ -30,6 +36,8 @@ function updateTemplate(){
 }
 
 //이벤트 리스너
+container_width.addEventListener("input", updateContainerCSize);
+container_height.addEventListener("input", updateContainerCSize);
 quantity.addEventListener("input", updateItemQuantity);
 
 row_gap.addEventListener("input", updateGap);

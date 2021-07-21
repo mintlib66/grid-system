@@ -16,6 +16,22 @@
     <section class="option">
       <h2 class="subtitle">Grid Option</h2>
       <div class="option_column">
+        <span>container size(width x height):</span
+        ><input
+          type="text"
+          id="container-width"
+          class="inputbox input-small"
+          value="auto"
+        />
+        <span>x</span
+        ><input
+          type="text"
+          id="container-height"
+          class="inputbox input-small"
+          value="auto"
+        />
+      </div>
+      <div class="option_column">
         <span>box quantity:</span
         ><input
           type="number"
@@ -35,6 +51,7 @@
         <select name="row-gap-unit" id="row-gap-unit">
           <option value="px">px</option>
           <option value="%">%</option>
+          <option value="em">em</option>
         </select>
         <span>column-gap:</span
         ><input
@@ -46,6 +63,7 @@
         <select name="column-gap-unit" id="column-gap-unit">
           <option value="px">px</option>
           <option value="%">%</option>
+          <option value="em">em</option>
         </select>
       </div>
       <div class="option_column">
