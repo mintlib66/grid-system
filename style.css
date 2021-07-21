@@ -13,8 +13,18 @@ header {
 .option {
   padding: 5px;
 }
+.option_column {
+  margin-bottom: 5px;
+}
+.inputbox {
+  margin-left: 5px;
+  border: 1px solid gray;
+}
 .input-small {
   width: 50px;
+}
+.input-long {
+  width: 400px;
 }
 
 .preview {

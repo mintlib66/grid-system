@@ -17,21 +17,54 @@
       <h2 class="subtitle">Grid Option</h2>
       <div class="option_column">
         <span>box quantity:</span
-        ><input type="number" id="quantity" class="input-small" value="9" />
+        ><input
+          type="number"
+          id="quantity"
+          class="inputbox input-small"
+          value="9"
+        />
       </div>
       <div class="option_column">
         <span>row-gap:</span
-        ><input type="number" id="row-gap" class="input-small" value="20" />
+        ><input
+          type="number"
+          id="row-gap"
+          class="inputbox input-small"
+          value="20"
+        />
         <select name="row-gap-unit" id="row-gap-unit">
           <option value="px">px</option>
           <option value="%">%</option>
         </select>
         <span>column-gap:</span
-        ><input type="number" id="column-gap" class="input-small" value="10" />
+        ><input
+          type="number"
+          id="column-gap"
+          class="inputbox input-small"
+          value="10"
+        />
         <select name="column-gap-unit" id="column-gap-unit">
           <option value="px">px</option>
           <option value="%">%</option>
         </select>
+      </div>
+      <div class="option_column">
+        <span>grid-template-rows:</span
+        ><input
+          type="text"
+          id="grid-template-rows"
+          class="inputbox input-long"
+          value="minmax(100px, auto)"
+        />
+      </div>
+      <div class="option_column">
+        <span>grid-template-column:</span
+        ><input
+          type="text"
+          id="grid-template-columns"
+          class="inputbox input-long"
+          value="repeat(auto-fill, minmax(25%, auto))"
+        />
       </div>
     </section>
     <section class="preview">
