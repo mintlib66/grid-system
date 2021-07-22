@@ -14,7 +14,18 @@ header {
   padding: 5px;
 }
 .option_column {
+  display: flex;
   margin-bottom: 5px;
+}
+.option_select {
+  margin-right: 5px;
+  width: 100px;
+  height: 20px;
+  background-color: rgb(166, 223, 223);
+  cursor: pointer;
+}
+.option_select.selected {
+  font-weight: 600;
 }
 .inputbox {
   margin-left: 5px;
@@ -42,6 +53,10 @@ header {
   background-color: rgb(166, 223, 223);
   color: teal;
   text-align: center;
+}
+.i1 {
+  background-color: rgb(223, 166, 166);
+  color: rgb(128, 0, 0);
 }
 .item-text {
   position: relative;
